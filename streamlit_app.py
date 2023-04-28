@@ -43,7 +43,7 @@ try:
       back_from_function = get_fruityvice_data(fruit_choice)
       streamlit.dataframe(back_from_function)
     
-#section to add the list     
+ #section to add the list     
 streamlit.header("The fruit load list contains:")
 #Snowflake-related functions
 def get_fruit_load_list():
@@ -64,7 +64,4 @@ except URLError as e:
 fruit_add = streamlit.text_input('What fruit would you like to add?', 'jackfruit')
 streamlit.write('Thanks for adding', fruit_add)
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-
-
-
 
