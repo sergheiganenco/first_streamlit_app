@@ -44,7 +44,7 @@ try:
       streamlit.dataframe(back_from_function)
       
 
-streamlit.stop.connector
+
 
 streamli.header("The fruit load list contains:")
 #Snowflake related funtions
@@ -59,6 +59,7 @@ if streamlit.button('Get Fruit Load List'):
    my_data_rows = get_fruit_load_list()
    streamlit.dataframe(my_data_rows)
 
+streamlit.stop.connector
 except URLError as e:
   streamlit.error()
 
