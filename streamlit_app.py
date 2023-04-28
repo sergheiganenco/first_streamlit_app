@@ -51,7 +51,7 @@ streamlit.stop.connector
 
 streamli.header("The fruit load list contains:")
 #Snowflake related funtions
-def get_fruit_load_list();
+def get_fruit_load_list():
     with my_cnx.cursor() as my_cur;
     my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
     return my_cur.fetchall()
