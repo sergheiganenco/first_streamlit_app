@@ -47,7 +47,7 @@ try:
 except URLError as e:
   streamlit.error()
 
-stramlit.stop.connector
+streamlit.stop.connector
 
 
 
